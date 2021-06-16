@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+<suite  name="Smoke Suite" verbose="10" configfailurepolicy="skip"  parallel="false"  thread-count="2">   
+  
+  <listeners>
+        <listener class-name="com.atg.extentReport.ExtentReporterNG"></listener>
+    </listeners>
+  
+  <test name="ATG - Spel på Sport, Häst och Casino">
+   <classes>
+	   <class name="com.atg.runner.TestRunner"/>  
+	 </classes>
+   </test>
+
+</suite>

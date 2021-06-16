@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Smoke Suite]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="com.atg.extentReport.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="2" name="ATG - Spel på Sport, Häst och Casino(failed)" verbose="10">
+    <classes>
+      <class name="com.atg.runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.atg.runner.TestRunner -->
+    </classes>
+  </test> <!-- ATG - Spel på Sport, Häst och Casino(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->
