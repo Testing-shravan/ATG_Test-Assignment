@@ -54,12 +54,10 @@ Designed this framework to execute tests in two different mode:
 3.   Referesh the project
 4. Navigate to this location to view the report- **\target\cucumber-reports
 
-
 ## See Extent Report (Test Report)
 1. Navigate to this location to view the extent report- **\test-output\ATG_TestReport.html 
 2. Right click on the ATG_TestReport.html and copy the path,
 3. Open the link in browser, You will see the very good extent report
-
 	
 ## Framework Highlights:
 1. In this framework I focused on Happy path testing
@@ -67,6 +65,9 @@ Designed this framework to execute tests in two different mode:
 3. No duplicate creation of class Objects
 4. Followed OOPS methodology on accessing the classs and methods
 5. Prarllel execution can be configured if needed
+
+## CI/CD pipeline for daily execution
+8. Integrated with Test NG, easy to perform different operation in CI/CD pipeline
 
 ## Framework Maintainence and Reusablity:
 1. Designed Page Object Model. if there is any change in UI easy to update the code
@@ -76,7 +77,6 @@ Designed this framework to execute tests in two different mode:
 5. Introduced logger - easy to identify the failed tests
 6. Created Helper methods which can be used across all action area.
 7. Created property Util to read from property files
-8. Integrated with Test NG, easy to perform different operation in CI/CD pipeline
 9. Automation Tests can be executed from command line - ease of exection from Devops environment
 10.Cucumber report will show the execution status of all the tests.
 
