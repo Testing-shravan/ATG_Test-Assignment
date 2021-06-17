@@ -60,7 +60,8 @@ Designed this framework to execute tests in two different mode:
      Maven command - mvn clean compile assembly:single
      
      1. Execute the maven command directly in terminal
-     2. Setup the maven command in run configuration this is the better way, it will generate the runnable Jar file and saved in target file
+     2. Setup the maven command in run configuration this is the better way, it will generate the runnable Jar file and saved in target file like below
+     3. ATG_BDD_Framework-0.0.1-SNAPSHOT-jar-with-dependencies.jar
      
 2. After generated runnable jar file, The task scheduler needs to be auto trigger to run the scripts on daily basis or hourly basis which we mentioned.
    For task scheduler we need to do some configuration in Administrative Tools and Task Scheduler in our local machine.
