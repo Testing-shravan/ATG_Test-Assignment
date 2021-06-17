@@ -54,7 +54,7 @@ Designed this framework to execute tests in two different mode:
 3.   Referesh the project
 4. Navigate to this location to view the report- **\target\cucumber-reports
 
-##Trigger the automation build for daily using batch file
+## Auto trigger the automation build for daily using batch file
 1. Create the Runnable jar file by execute the below maven commands in two ways,       
      
      Maven command - mvn clean compile assembly:single
@@ -65,7 +65,7 @@ Designed this framework to execute tests in two different mode:
 2. After generated runnable jar file, We need to execute the task scheduler to run the scripts on daily basis or hourly basis .
    for task scheduler we need to do some configuration in administrative tools and Task Scheduler in our machine.
    
-##Trigger the automation build using CI/CD tools (Jenkins)
+## Auto trigger the automation build using CI/CD tools (Jenkins)
 1. This Behavior Driven framework is integrated with TestNg which gives more flexibility in CI/CD build pipeline to execute the build on daily or weekly basis
    We need to configure our project setup in Jenkins by creating one Jenkins file in our project that file will trigger the build in Jenkins automatically
 
