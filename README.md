@@ -54,10 +54,26 @@ Designed this framework to execute tests in two different mode:
 3.   Referesh the project
 4. Navigate to this location to view the report- **\target\cucumber-reports
 
+##Trigger the automation build for daily using batch file
+1. Create the Runnable jar file by execute the below maven commands in two ways,       
+     
+     Maven command - mvn clean compile assembly:single
+     
+     1. Execute the maven command directly in terminal
+     2. Setup the maven command in run configuration this is the better way, it will generate the runnable Jar file and saved in target file
+     
+2. After generated runnable jar file, We need to execute the task scheduler to run the scripts on daily basis or hourly basis .
+   for task scheduler we need to do some configuration in administrative tools and Task Scheduler in our machine.
+   
+##Trigger the automation build using CI/CD tools (Jenkins)
+1. This Behavior Driven framework is integrated with TestNg which gives more flexibility in CI/CD build pipeline to execute the build on daily or weekly basis
+   We need to configure our project setup in Jenkins by creating one Jenkins file in our project that file will trigger the build in Jenkins automatically
+
 ## See Extent Report (Test Report)
 1. Navigate to this location to view the extent report- **\test-output\ATG_TestReport.html 
 2. Right click on the ATG_TestReport.html and copy the path,
 3. Open the link in browser, You will see the very good extent report
+
 	
 ## Framework Highlights:
 1. In this framework I focused on Happy path testing
@@ -65,9 +81,6 @@ Designed this framework to execute tests in two different mode:
 3. No duplicate creation of class Objects
 4. Followed OOPS methodology on accessing the classs and methods
 5. Prarllel execution can be configured if needed
-
-## CI/CD pipeline for daily execution
-8. Integrated with Test NG, easy to perform different operation in CI/CD pipeline
 
 ## Framework Maintainence and Reusablity:
 1. Designed Page Object Model. if there is any change in UI easy to update the code
@@ -77,8 +90,13 @@ Designed this framework to execute tests in two different mode:
 5. Introduced logger - easy to identify the failed tests
 6. Created Helper methods which can be used across all action area.
 7. Created property Util to read from property files
-9. Automation Tests can be executed from command line - ease of exection from Devops environment
-10.Cucumber report will show the execution status of all the tests.
+8. Automation Tests can be executed from command line - ease of exection from Devops environment
+9.Cucumber report will show the execution status of all the tests.
+
+
+
+
+
 
 
 
