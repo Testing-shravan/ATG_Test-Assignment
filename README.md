@@ -62,8 +62,8 @@ Designed this framework to execute tests in two different mode:
      1. Execute the maven command directly in terminal
      2. Setup the maven command in run configuration this is the better way, it will generate the runnable Jar file and saved in target file
      
-2. After generated runnable jar file, We need to execute the task scheduler to run the scripts on daily basis or hourly basis .
-   for task scheduler we need to do some configuration in administrative tools and Task Scheduler in our machine.
+2. After generated runnable jar file, The task scheduler needs to be auto trigger to run the scripts on daily basis or hourly basis which we mentioned.
+   For task scheduler we need to do some configuration in Administrative Tools and Task Scheduler in our local machine.
    
 ## Auto trigger the automation build using CI/CD tools (Jenkins)
 1. This Behavior Driven framework is integrated with TestNg which gives more flexibility in CI/CD build pipeline to execute the build on daily or weekly basis
